@@ -126,7 +126,7 @@ Disadvantages:
 
 ## Hadoop
 
-- Open Source: Apache Foundation
+- Open Source: [Apache Foundation](https://apache.org)
 - Java
 - Linux
 
@@ -135,7 +135,7 @@ Disadvantages:
 - Distributed Filesystem: HDFS
 - Cluster Manager: YARN
 - Execution Engines: MapReduce, Tez, Spark
-- Warehouse /SQL: Hive
+- Warehouse / SQL: Hive
 - NoSQL DB: HBase
 - And other stuff
 
@@ -143,18 +143,18 @@ Disadvantages:
 
 - Business intelligence
 - Data Mining
-- Visualisation, graphs
+- Visualization, graphs
 - SQL / BI Tools
 
 ## Data jobs: Data Scientist
 
 - Machine Learning / Deep Learning
-- Feature engineering - Visualisation
+- Feature engineering - Visualization
 - Python / R
 
 ## Data jobs: the Data Science hierarchy of needs
 
-- Learn, optmize
+- Learn, optimize
 - Aggregate, label
 - Explore, transform
 - Move, store
