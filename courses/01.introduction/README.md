@@ -10,6 +10,20 @@ With Big Data technologies, Business Intelligence is entering a new era. Hadoop 
 
 ![Big Data ecosystem](./assets/ecosystem.png)
 
+## About me
+
+Gauthier Leonard - Big Data Consultant @ [Adaltas](https://www.adaltas.com/en)
+
+What I do:
+
+- Data Engineering
+- Big Data Architecture
+- DevOps
+
+I work with Hadoop on-premise and Databricks on Azure.sudo apt-get update
+
+Contact: gauthier@adaltas.com
+
 ## Basic knowledge: Information Systems
 
 What is an Information System (IS)?
@@ -21,7 +35,7 @@ What is an Information System (IS)?
 
 ## Basic knowledge: Distributed systems
 
-Group of computers that appear as a unique and coherent system to the end user
+Group of computers/servers that appear as a unique and coherent system to the end user
 
 ## Basic knowledge: Horizontal vs vertical scaling
 
@@ -40,6 +54,7 @@ Get more machine versus get bigger machines
 - Data created and used only by technical people
 - Non human readable
 - Strongly typed
+- Small volume
 
 2000-2005: Internet rises
 
@@ -96,6 +111,11 @@ Disadvantages:
 
 ## Why do we need Big Data?
 
+- Data companies
+- Other companies?
+  - Centralize data
+  - Analyze data history to bring value
+
 ## Big Data clusters
 
 - Cluster: Group of connected computers that can be viewed as a single system
@@ -103,6 +123,12 @@ Disadvantages:
 - Examples:
   - Apache Hadoop
   - Elasticsearch
+
+## Hadoop
+
+- Open Source: Apache Foundation
+- Java
+- Linux
 
 ## The Hadoop Ecosystem
 
