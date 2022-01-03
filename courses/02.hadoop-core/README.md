@@ -112,7 +112,7 @@ Components:
 - **DataNodes**: store blocks + handles read/write operations
 - **JournalNodes**: keep track of every action and build the FSImage
 
-## What is YARN
+## What is YARN?
 
 Yet Another Resource Negotiator:
 
@@ -150,7 +150,7 @@ Components (JVMs) of an application:
 
 - Queues
 
-- - ECE - 70% 100%
+- - CentraleSupelec - 70% 100%
 
   - - APP - 50% 100%
     - INI  - 50% 100%
