@@ -8,38 +8,25 @@ Data, and the insight it offers, is essential for business to innovate and diffe
 
 With Big Data technologies, Business Intelligence is entering a new era. Hadoop and the likes, NoSQL databases, and Cloud managed infrastrutures store and represent structured and unstructured data and time series such as logs and sensors. From collect to visualization, the whole processing chain is processed in batch and real time.
 
-![Big Data ecosystem](./assets/ecosystem.png)
-
-## About me
-
-Gauthier Leonard - Big Data Consultant @ [Adaltas](https://www.adaltas.com/en)
-
-What I do:
-
-- Data Engineering
-- Big Data Architecture
-- DevOps
-
-I work with Hadoop on-premise and Databricks on Azure.sudo apt-get update
-
-Contact: gauthier@adaltas.com
+![Big Data ecosystem](../assets/index.png)
 
 ## Basic knowledge: Information Systems
 
 What is an Information System (IS)?
 
-- Collect
-- Process
-- Store
-- Distribute
+- Collect data
+- Process it
+- Store it
+- Distribute it
 
 ## Basic knowledge: Distributed systems
 
-Group of computers/servers that appear as a unique and coherent system to the end user
+A distributed system is a group of computers that appear as a unique and coherent system to the end user.
 
 ## Basic knowledge: Horizontal vs vertical scaling
 
-Get more machine versus get bigger machines
+- Vertical scaling: increase the size of the servers = more RAM, more powerful CPUs, more disk space, etc.
+- Horizontal scaling: increase the number of server instead of ther size. Works for distributed systems.
 
 ## Basic knowledge: Data structure
 
@@ -54,7 +41,6 @@ Get more machine versus get bigger machines
 - Data created and used only by technical people
 - Non human readable
 - Strongly typed
-- Small volume
 
 2000-2005: Internet rises
 
@@ -111,11 +97,6 @@ Disadvantages:
 
 ## Why do we need Big Data?
 
-- Data companies
-- Other companies?
-  - Centralize data
-  - Analyze data history to bring value
-
 ## Big Data clusters
 
 - Cluster: Group of connected computers that can be viewed as a single system
@@ -124,18 +105,14 @@ Disadvantages:
   - Apache Hadoop
   - Elasticsearch
 
-## Hadoop
-
-- Open Source: [Apache Foundation](https://apache.org)
-- Java
-- Linux
+![Big Data cluster](assets/big-data-cluster.png)
 
 ## The Hadoop Ecosystem
 
 - Distributed Filesystem: HDFS
 - Cluster Manager: YARN
 - Execution Engines: MapReduce, Tez, Spark
-- Warehouse / SQL: Hive
+- Warehouse /SQL: Hive
 - NoSQL DB: HBase
 - And other stuff
 
@@ -143,18 +120,18 @@ Disadvantages:
 
 - Business intelligence
 - Data Mining
-- Visualization, graphs
+- Visualisation, graphs
 - SQL / BI Tools
 
 ## Data jobs: Data Scientist
 
 - Machine Learning / Deep Learning
-- Feature engineering - Visualization
+- Feature engineering - Visualisation
 - Python / R
 
 ## Data jobs: the Data Science hierarchy of needs
 
-- Learn, optimize
+- Learn, optmize
 - Aggregate, label
 - Explore, transform
 - Move, store

@@ -4,8 +4,6 @@ duration: 3 hours
 
 # Hadoop core: HDFS and YARN
 
-![Big Data ecosystem](./assets/ecosystem.png)
-
 ## The Hadoop Ecosystem
 
 - A stack of **Open Source softwares** offering all the functionalities needed to build a [Data Lake](https://en.wikipedia.org/wiki/Data_lake) and exploit the data stored in it. Most of the Hadoop projects are maintained by the [Apache Software Foundation](https://apache/org) and can be found on [their GitHub](https://github.com/apache).
@@ -62,12 +60,12 @@ Other distributed architectures?
   - The blocks that compose the file
   - The position of each block in the cluster
 
-- ##### **DataNodes** (= workers):
+- **DataNodes** (= workers):
 
   - Store the blocks on disks (hardware optimization)
   - Handle read/write operations
 
-- Secondary NameNode: Builds HDFS checkpoints (= FSImage) from NameNode edit logs
+- **Secondary NameNode:** Builds HDFS checkpoints (= FSImage) from NameNode edit logs
 
 ## HDFS: Data replication example
 
@@ -102,7 +100,7 @@ High Availability: more than 1 master (1 **active** + N **standby**)
 
 ## HDFS: High Availability mode
 
-<img src="https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.6.4/bk_hadoop-high-availability/content/figures/4/figures/bk_system-admin-guide-20140829-image_11.jpeg" alt="HDFS HA" style="zoom:150%;" /> 
+<img src="https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.6.4/bk_hadoop-high-availability/content/figures/4/figures/bk_system-admin-guide-20140829-image_11.jpeg" alt="HDFS HA" style="zoom:150%;" />
 
 ## HDFS HA: Sum up
 
@@ -153,7 +151,7 @@ Components (JVMs) of an application:
 - - CentraleSupelec - 70% 100%
 
   - - APP - 50% 100%
-    - INI  - 50% 100%
+    - INI - 50% 100%
 
   - Adaltas - 30% 50%
 
