@@ -42,14 +42,14 @@ uncompromised   1
 
 ### Design a MapReduce job to get the most frequent word
 
-Now, we want to get the **most frequent word** of the input by using the output of our previous `word_count` job. 
+Now, we want to get the **most frequent word** of the input by using the output of our previous `word_count` job.
 
 Design a MapReduce job by defining:
 
 - The output produced by the mapper
 - The computation performed by the reducer
 
-**Take care:** You cannot control the number of reduce tasks that will run.
+**Do not cheat:** You cannot control the number of reduce tasks that will run (their can be more than 1 reduce in 1 reducer container).
 
 ### Write the most_frequent MapReduce job
 

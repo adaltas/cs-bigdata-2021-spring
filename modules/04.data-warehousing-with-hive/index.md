@@ -10,7 +10,7 @@ duration: 3 hours
   - Process billions of rows in ETL (Extract Transform Load) batch pipelines
   - Join multiple tables
 - **OLTP**: OnLine Transactional Processing
-  - Read/Insert/Update values the fastest possible
+  - Read/insert/update a few values the fastest possible
 
 ## Apache Hive
 
@@ -20,8 +20,6 @@ duration: 3 hours
   - MapReduce: disk I/O intensive
   - Tez: uses RAM and can chain reduces
   - (Spark)
-
-![Hive architecture](./assets/hive_architecture.jpg)
 
 ## Query data on HDFS
 
@@ -50,6 +48,8 @@ duration: 3 hours
   - Stores metadata (table names, schema, data location)
   - Stores statistics on the tables
 - **Hive clients** (JDBC). E.g. Beeline
+
+![Hive architecture](./assets/hive_architecture.jpg)
 
 ## Example: daily ingestion of CSV file
 
