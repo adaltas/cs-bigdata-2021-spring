@@ -19,7 +19,7 @@ Using the official [HDFS Commands Guide](https://hadoop.apache.org/docs/current/
 4. Copy the file to your `lab2` HDFS directory
 5. Get information about the blocks composing your file, their replica and locations using `hadoop fsck`
 
-### Sumbit an application in YARN
+### Submit an application in YARN
 
 To test YARN, we will run the Pi example from the MapReduce example JAR. This is a MapReduce program that computes Pi using the [Quasi-Monte Carlo method](https://en.wikipedia.org/wiki/Quasi-Monte_Carlo_method) (1st argument = number of mappers, 2nd argument = number of samples).
 
@@ -39,10 +39,11 @@ The configuration depends on your OS:
 - On Linux and MacOS
 
   - Nothing to install
-  - Create the file `/etc/krb5.conf` with the following content:
+  - Create the file `/etc/krb5.conf` on your computer with the following content:
 
     ```ini
     [libdefaults]
+     default_ccache_name = FILE:/tmp/krb5cc_%{uid}
      default_realm = AU.ADALTAS.CLOUD
      dns_lookup_realm = false
      dns_lookup_kdc = true
@@ -50,7 +51,7 @@ The configuration depends on your OS:
      ticket_lifetime = 24h
      forwardable = true
      udp_preference_limit = 0
-
+    
     [realms]
      AU.ADALTAS.CLOUD = {
       kdc = ipa1.au.adaltas.cloud:88
@@ -58,14 +59,14 @@ The configuration depends on your OS:
       admin_server = ipa1.au.adaltas.cloud:749
       default_domain = au.adaltas.cloud
      }
-
+    
     [domain_realm]
      .au.adaltas.cloud = AU.ADALTAS.CLOUD
      au.adaltas.cloud = AU.ADALTAS.CLOUD
      ipa1.au.adaltas.cloud = AU.ADALTAS.CLOUD
     ```
 
-  - After that you can get a Kerberos ticket using `kinit $USER`
+  - After that you can get a Kerberos ticket using `kinit $USER` (same user name that the one used to connect with SSH)
   - Check your ticket with `klist`
   - Add the following properties in your Firefox `about:config` page:
     ```ini
