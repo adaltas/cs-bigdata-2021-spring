@@ -11,7 +11,7 @@
 
 ### Copy files to HDFS
 
-Using the official [HDFS Commands Guide](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html):
+Using the official [HDFS DFS Commands Guide](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html):
 
 1. Create a directory named after your `$USER` in your group HDFS directory. E.g. `/education/cs_2022_spring_1/$USER`
 2. Create a subdirectory `lab2` in the directory created in 1.
@@ -28,7 +28,7 @@ To test YARN, we will run the Pi example from the MapReduce example JAR. This is
    yarn jar /usr/hdp/3.1.0.0-78/hadoop-mapreduce/hadoop-mapreduce-examples-3.1.1.3.1.0.0-78.jar pi 4 100000000
    ```
 2. Wait until you find the result
-3. Run the command `yarn app -list` and notice all your colleagues apps running in YARN
+3. Run the command `yarn app -list` that shows your apps running in YARN
 
 ### Accessing Hadoop Web UIs using Kerberos
 
@@ -95,6 +95,6 @@ The WordCount example is also located in the MapReduce example JAR. It takes sev
    ```bash
    yarn jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-mapreduce-examples-3.1.1.3.1.0.0-78.jar \
     wordcount /education/cs_2022_spring_1/resources/lab2 \
-    /education/cs_2022_spring_1/gr1/$USER/lab2/output-moby-dick
+    /education/cs_2022_spring_1/$USER/lab2/output-moby-dick
    ```
 3. Check out the output directory
