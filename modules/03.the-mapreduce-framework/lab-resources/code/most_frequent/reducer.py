@@ -5,9 +5,8 @@ import json
 def read_kv_array(text):
     key_values = []
 
-    for line in text:
-        key, value = line.split('\t')
-        key_values.append({'key': key, 'value': value})
+    key, value = text.split('\t')
+    key_values.append({'key': key, 'value': value})
 
     return key_values
 
@@ -34,4 +33,9 @@ def find_most_frequent(kv_array):
 
 
 if __name__ == '__main__':
-    write_kv_dict(find_most_frequent(read_kv_array(sys.stdin)))
+    stdin = sys.stdin.read()
+
+    if len(stdin):
+        write_kv_dict(find_most_frequent(read_kv_array(stdin)))
+    else:
+        print("")
