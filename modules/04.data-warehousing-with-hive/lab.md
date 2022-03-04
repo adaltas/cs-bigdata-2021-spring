@@ -16,7 +16,15 @@ Using the official [Hive Data Definition Langage](https://cwiki.apache.org/confl
 
 1. Using the HDFS CLI, take a look at the data used for this lab at `/education/cs_2022_spring_1/resources/lab4/nyc_drivers/drivers.csv`
 
-2. Open a Beeline session by typing `beeline`
+2. Copy the `nyc_drivers` folder to your user directory in HDFS:
+
+   ```bash
+   hdfs dfs -mkdir -p "/education/cs_2022_spring_1/$USER/lab4"
+
+   hdfs dfs -cp /education/cs_2022_spring_1/resources/lab4/nyc_drivers "/education/cs_2022_spring_1/$USER/lab4"
+   ```
+
+3. Open a Beeline session by typing `beeline`
 
 4. Create an external table targeting our data with this statement (to be completed, replace `YOUR_USERNAME`):
 
@@ -60,4 +68,4 @@ Now we want to populate our ORC table from our CSV table. Using the [Hive Data M
    - Transform `certified` from `STRING` to `BOOLEAN`
    - Rename `location` to `address`
 2. Execute your query
-3. Check what the data looks like in the managed table using the HDFS CLI at `/warehouse/tablespace/managed/hive/cs_2022_spring_1.db/${USER}_nyc_drivers`
+3. Check what the data looks like in the managed table using the HDFS CLI at `/warehouse/tablespace/managed/hive/cs_2022_spring_1.db/${username}_nyc_drivers`
