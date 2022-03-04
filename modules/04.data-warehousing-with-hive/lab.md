@@ -15,12 +15,9 @@ For this lab we will be using a very small dataset of NYC taxi drivers.
 Using the official [Hive Data Definition Langage](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL):
 
 1. Using the HDFS CLI, take a look at the data used for this lab at `/education/cs_2022_spring_1/resources/lab4/nyc_drivers/drivers.csv`
-2. Copy the `nyc_drivers` folder to your user directory in HDFS:
-   ```bash
-   hdfs dfs -mkdir -p "/education/cs_2022_spring_1/$USER/lab4"
-   hdfs dfs -cp /education/cs_2022_spring_1/resources/lab4/nyc_drivers "/education/cs_2022_spring_1/$USER/lab4"
-   ```
-3. Open a Beeline session by typing `beeline`
+
+2. Open a Beeline session by typing `beeline`
+
 4. Create an external table targeting our data with this statement (to be completed, replace `YOUR_USERNAME`):
 
    ```sql

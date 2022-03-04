@@ -68,7 +68,7 @@ duration: 3 hours
   - Enables to query parts of the data (avoid full scan)
   - There should not be to many (small files problem)
   - 1 partition = 1 subfolder in HDFS
-    - `.../products_table/type=book/orc_data`
+    - `.../products_table/p_type=book/orc_data`
 
 ## Hive buckets
 
@@ -80,6 +80,10 @@ duration: 3 hours
 - Hard to use correctly (need for a specific reason)
 
 ![Partitioning vs bucketing](./assets/partitioning_bucketing.jpg)
+
+## Bronze/silver/gold paradigm
+
+![bronze/silver/gold](./assets/bronze-silver-gold.png)
 
 ## To go further
 
