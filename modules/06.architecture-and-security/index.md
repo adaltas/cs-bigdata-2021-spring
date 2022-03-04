@@ -12,10 +12,10 @@ Hadoop high-level architecture
 
 Node types:
 
-- **Masters**: NN, RM, HBaseMaster
-- **Utility:** HiveMetastore, HS2, Oozie, Ambari
-- **Workers**: DN, NM, RS
-- **Edge nodes**: clients (hdfs, yarn, beeline, hbase, spark)
+- **Masters**: NameNode, ResourceManager, HBaseMaster
+- **Utility:** HiveMetastore, Oozie, Ambari
+- **Workers**: DataNode, NodeManager, RegionServer
+- **Edge nodes**: HiveServer2, clients (`hdfs`, `yarn`, `beeline`, `hbase`, `spark`), Zeppelin
 - **Security nodes**
 
 ![Hadoop node types](./assets/node_types.png)
@@ -23,7 +23,7 @@ Node types:
 Node hardware specifications:
 
 - **Masters**: medium RAM/CPU, **RAID** on disks
-- **Side-masters**: medium RAM/CPU
+- **Utility**: medium RAM/CPU
 - **Workers**: lot of RAM/CPU, lots of disks (> 10), no RAID
 - **Edge nodes**: can be VMs/containers
 - **Security nodes**
@@ -55,7 +55,7 @@ LDAP = Lightweight Directory Access Protocol
 - Stores **users** and **groups**
 - Allows **identification** (“this user exists and belongs to those groups”)
 - Also stores passwords for basic authentication
-- Examples: OpenLDAP, FreeIPA, Active Directory
+- Examples: OpenLDAP, FreeIPA/Identity Management, Active Directory
 
 ![LDAP process](./assets/ldap_process.png)
 
@@ -103,6 +103,7 @@ Integration with LDAP
 ## Governance
 
 - Audit logs (who accessed what data)
+- Data Catalog
 - Data lineage (application: GDPR)
 - **Apache Atlas**:
   - Allows adding tags to data, tag propagation
