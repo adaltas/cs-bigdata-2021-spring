@@ -1,6 +1,6 @@
 # Big Data Ecosystem
 
-## Lab 4: Hive
+## Lab 4.1: Hive Warehouse
 
 ### Goals
 
