@@ -30,6 +30,7 @@
       <jdbc-url>${jdbcUrl}</jdbc-url>
       <script>scripts/create_drivers_ext.hql</script>
       <param>hiveUsername=${hiveUsername}</param>
+      <param>clusterUsername=${clusterUsername}</param>
       <param>dbName=${dbName}</param>
     </hive2>
     <ok to="end" />
