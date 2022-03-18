@@ -5,8 +5,15 @@
 Basics:
 
 - Export scientific articles metadata to HDFS (Python script using [HdfsCLI](https://hdfscli.readthedocs.io/en/latest/index.html))
+
 - Make data available through a Hive table (HQL script)
+
 - Create some graphics using Zeppelin
+
+  - :warning: Give `gauthier` permissions to run the notebook (top right corner: :lock:)
+
+    <img src="./assets/zeppelin-permissions.png" alt="Zeppelin permissions" style="zoom:80%;" /> 
+
 
 Bonus:
 
